@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class hero{
+public:
+//data members
+int age;
+string name;
+//methods
+void input()
+{
+ cout<<"enter the age of the hero:"<<endl;
+ cin>>age;
+ cout<<"enter the name of the hero:"<<endl;
+ cin>>name;
+}
+void print()
+{
+    cout<<"the age of the hero is:"<<age<<endl;
+    cout<<"the name of the hero is:"<<name<<endl;
+}
+};
+int main()
+{
+//object creation
+hero h;
+h.input();
+h.print();
+return 0;
+}
